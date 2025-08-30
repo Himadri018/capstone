@@ -67,7 +67,6 @@ public class LoginPage extends BasePage {
     	WaitUtils.waitForClickable(d, signBackCross, 8).click();
     }
 
-    // ── Checks ────────────────────────────────────────────────────────────────
     public boolean isOtpVisible() {
         try { System.out.println(otpInput.getText());
         	return WaitUtils.waitForVisible(d, otpInput, 8).isDisplayed(); }
@@ -76,10 +75,8 @@ public class LoginPage extends BasePage {
 
     public boolean isInvalidMobileErrorVisible() {
     	try {
-            // primary: wait for the mapped error element to become visible
             return WaitUtils.waitForVisible(d, invalidMobileError, 8).isDisplayed();
         } catch (Exception ignore) {
-            // fallback by text (handles dynamic classes)
             try {
                 WebElement byText = d.findElement(org.openqa.selenium.By.xpath(
                     "//*[contains(translate(normalize-space(.), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'invalid mobile')]"

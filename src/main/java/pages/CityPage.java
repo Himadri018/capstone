@@ -39,7 +39,7 @@ public class CityPage extends BasePage{
             citySelec.sendKeys(a);
             citySelecFinal.click();
         } catch (Exception e) {
-            System.out.println("❌ Error in cityExploreValid: " + e.getMessage());
+            System.out.println("Error in cityExploreValid: " + e.getMessage());
         }
     }
 
@@ -49,7 +49,7 @@ public class CityPage extends BasePage{
             String b = citySelecError.getText();
             Assert.assertEquals(b.toLowerCase(), a.toLowerCase());
         } catch (Exception e) {
-            System.out.println("❌ Error in cityExploreInvalid: " + e.getMessage());
+            System.out.println("Error in cityExploreInvalid: " + e.getMessage());
         }
     }
 
@@ -57,7 +57,7 @@ public class CityPage extends BasePage{
         try {
             System.out.println(citySelecError.equals("No results found."));
         } catch (Exception e) {
-            System.out.println("❌ Error in noCity: " + e.getMessage());
+            System.out.println("Error in noCity: " + e.getMessage());
         }
     }
 
@@ -67,7 +67,7 @@ public class CityPage extends BasePage{
             citySelecFinal.click();
             citySelecValidation.click();
         } catch (Exception e) {
-            System.out.println("❌ Error in openCity: " + e.getMessage());
+            System.out.println("Error in openCity: " + e.getMessage());
         }
     }
 
@@ -77,7 +77,7 @@ public class CityPage extends BasePage{
             Assert.assertEquals(b.toLowerCase(), a.toLowerCase(), "Expected " + a + " but got " + b);
             System.out.println("✅ City matched: " + b);
         } catch (Exception e) {
-            System.out.println("❌ Error in cityResult: " + e.getMessage());
+            System.out.println("Error in cityResult: " + e.getMessage());
         }
     }
 
@@ -86,7 +86,7 @@ public class CityPage extends BasePage{
             citySelecIcon.click();
             System.out.println(a + " Selected as City");
         } catch (Exception e) {
-            System.out.println("❌ Error in citySelecIcon: " + e.getMessage());
+            System.out.println("Error in citySelecIcon: " + e.getMessage());
         }
     }
 
@@ -94,7 +94,7 @@ public class CityPage extends BasePage{
         try {
             allCity.click();
         } catch (Exception e) {
-            System.out.println("❌ Error in allCityBtn: " + e.getMessage());
+            System.out.println("Error in allCityBtn: " + e.getMessage());
         }
     }
 
@@ -105,7 +105,7 @@ public class CityPage extends BasePage{
                     .map(String::trim)
                     .toList();
         } catch (Exception e) {
-            System.out.println("❌ Error in getAllCityNames: " + e.getMessage());
+            System.out.println("Error in getAllCityNames: " + e.getMessage());
             return List.of();
         }
     }
@@ -115,7 +115,7 @@ public class CityPage extends BasePage{
         try {
             return getAllCityNames().contains(city);
         } catch (Exception e) {
-            System.out.println("❌ Error in isCityPresent: " + e.getMessage());
+            System.out.println("Error in isCityPresent: " + e.getMessage());
             return false;
         }
     }

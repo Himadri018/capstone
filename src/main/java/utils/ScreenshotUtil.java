@@ -15,10 +15,8 @@ public class ScreenshotUtil{
      */
     public static byte[] captureScreenshot(WebDriver d, String name) {
         try {
-            // 1) Bytes for Cucumber report
             byte[] bytes = ((TakesScreenshot) d).getScreenshotAs(OutputType.BYTES);
 
-            // 2) Also save file to /screenshots
             File src = ((TakesScreenshot) d).getScreenshotAs(OutputType.FILE);
             String ts = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
             File dest = new File("screenshots" + File.separator + safe(name) + "_" + ts + ".png");
@@ -27,7 +25,7 @@ public class ScreenshotUtil{
 
             return bytes;
         } catch (Exception e) {
-            // If anything fails, just return null to avoid test crash on teardown
+
             return null;
         }
     }

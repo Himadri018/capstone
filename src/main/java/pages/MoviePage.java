@@ -57,7 +57,6 @@ public class MoviePage extends BasePage{
 
     public void recMovie(String a) {
     	try {
-            // exact alt match, with a simple fallback to contains()
             WebElement movie = d.findElement(
                 By.xpath("//img[@alt=\"" + a + "\"] | //img[contains(@alt, \"" + a + "\")]")
             );
