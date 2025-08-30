@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-passed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>C:\Users\himad\eclipse-workspace\Capstoneproject\capstone.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">25 methods,   25 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate key UI elements on Movies screen&quot;, &quot;Movie Search&quot;)">runScenario("Validate key UI elements on Movies screen", "Movie Search")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;View all cities and validate a few non-popular names&quot;, &quot;City Search&quot;)">runScenario("View all cities and validate a few non-popular names", "City Search")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Valid login with valid credentials&quot;, &quot;Login Module&quot;)">runScenario("Valid login with valid credentials", "Login Module")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Search for a currently running movie from and validate results&quot;, &quot;Movie Search&quot;)">runScenario("Search for a currently running movie from and validate results", "Movie Search")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Search with an invalid/non-existing city&quot;, &quot;City Search&quot;)">runScenario("Search with an invalid/non-existing city", "City Search")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Search with a valid city name&quot;, &quot;City Search&quot;)">runScenario("Search with a valid city name", "City Search")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate key UI elements on Movies screen&quot;, &quot;Movie Search&quot;)">runScenario("Validate key UI elements on Movies screen", "Movie Search")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Invalid login with invalid credentials&quot;, &quot;Login Module&quot;)">runScenario("Invalid login with invalid credentials", "Login Module")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate key UI elements on Movies screen&quot;, &quot;Movie Search&quot;)">runScenario("Validate key UI elements on Movies screen", "Movie Search")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Select city using popular city icons&quot;, &quot;City Search&quot;)">runScenario("Select city using popular city icons", "City Search")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Search for a currently running movie from and validate results&quot;, &quot;Movie Search&quot;)">runScenario("Search for a currently running movie from and validate results", "Movie Search")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate key UI elements on Movies screen&quot;, &quot;Movie Search&quot;)">runScenario("Validate key UI elements on Movies screen", "Movie Search")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate key UI elements on Movies screen&quot;, &quot;Movie Search&quot;)">runScenario("Validate key UI elements on Movies screen", "Movie Search")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;View all cities and validate a few non-popular names&quot;, &quot;City Search&quot;)">runScenario("View all cities and validate a few non-popular names", "City Search")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Explore upcoming movies and validate &#039;In Cinemas Near You&#039; link&quot;, &quot;Movie Search&quot;)">runScenario("Explore upcoming movies and validate 'In Cinemas Near You' link", "Movie Search")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;View all cities and validate a few non-popular names&quot;, &quot;City Search&quot;)">runScenario("View all cities and validate a few non-popular names", "City Search")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate key UI elements on Movies screen&quot;, &quot;Movie Search&quot;)">runScenario("Validate key UI elements on Movies screen", "Movie Search")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;View all cities and validate a few non-popular names&quot;, &quot;City Search&quot;)">runScenario("View all cities and validate a few non-popular names", "City Search")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate Check Gift Card Balance icon is visible&quot;, &quot;Gift Card&quot;)">runScenario("Validate Check Gift Card Balance icon is visible", "Gift Card")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Elements should be visible&quot;, &quot;Login Module&quot;)">runScenario("Elements should be visible", "Login Module")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate key UI elements on Movies screen&quot;, &quot;Movie Search&quot;)">runScenario("Validate key UI elements on Movies screen", "Movie Search")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate key UI elements on Movies screen&quot;, &quot;Movie Search&quot;)">runScenario("Validate key UI elements on Movies screen", "Movie Search")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate key UI elements on Movies screen&quot;, &quot;Movie Search&quot;)">runScenario("Validate key UI elements on Movies screen", "Movie Search")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check gift card balance with invalid voucher&quot;, &quot;Gift Card&quot;)">runScenario("Check gift card balance with invalid voucher", "Gift Card")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate key UI elements on Movies screen&quot;, &quot;Movie Search&quot;)">runScenario("Validate key UI elements on Movies screen", "Movie Search")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">runners.TestRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate key UI elements on Movies screen&quot;, &quot;Movie Search&quot;)">
+                  </a> <!-- runScenario("Validate key UI elements on Movies screen", "Movie Search") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate key UI elements on Movies screen","Movie Search")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;View all cities and validate a few non-popular names&quot;, &quot;City Search&quot;)">
+                  </a> <!-- runScenario("View all cities and validate a few non-popular names", "City Search") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("View all cities and validate a few non-popular names","City Search")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Valid login with valid credentials&quot;, &quot;Login Module&quot;)">
+                  </a> <!-- runScenario("Valid login with valid credentials", "Login Module") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Valid login with valid credentials","Login Module")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Search for a currently running movie from and validate results&quot;, &quot;Movie Search&quot;)">
+                  </a> <!-- runScenario("Search for a currently running movie from and validate results", "Movie Search") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Search for a currently running movie from and validate results","Movie Search")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Search with an invalid/non-existing city&quot;, &quot;City Search&quot;)">
+                  </a> <!-- runScenario("Search with an invalid/non-existing city", "City Search") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Search with an invalid/non-existing city","City Search")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Search with a valid city name&quot;, &quot;City Search&quot;)">
+                  </a> <!-- runScenario("Search with a valid city name", "City Search") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Search with a valid city name","City Search")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate key UI elements on Movies screen&quot;, &quot;Movie Search&quot;)">
+                  </a> <!-- runScenario("Validate key UI elements on Movies screen", "Movie Search") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate key UI elements on Movies screen","Movie Search")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Invalid login with invalid credentials&quot;, &quot;Login Module&quot;)">
+                  </a> <!-- runScenario("Invalid login with invalid credentials", "Login Module") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Invalid login with invalid credentials","Login Module")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate key UI elements on Movies screen&quot;, &quot;Movie Search&quot;)">
+                  </a> <!-- runScenario("Validate key UI elements on Movies screen", "Movie Search") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate key UI elements on Movies screen","Movie Search")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Select city using popular city icons&quot;, &quot;City Search&quot;)">
+                  </a> <!-- runScenario("Select city using popular city icons", "City Search") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Select city using popular city icons","City Search")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Search for a currently running movie from and validate results&quot;, &quot;Movie Search&quot;)">
+                  </a> <!-- runScenario("Search for a currently running movie from and validate results", "Movie Search") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Search for a currently running movie from and validate results","Movie Search")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate key UI elements on Movies screen&quot;, &quot;Movie Search&quot;)">
+                  </a> <!-- runScenario("Validate key UI elements on Movies screen", "Movie Search") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate key UI elements on Movies screen","Movie Search")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate key UI elements on Movies screen&quot;, &quot;Movie Search&quot;)">
+                  </a> <!-- runScenario("Validate key UI elements on Movies screen", "Movie Search") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate key UI elements on Movies screen","Movie Search")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;View all cities and validate a few non-popular names&quot;, &quot;City Search&quot;)">
+                  </a> <!-- runScenario("View all cities and validate a few non-popular names", "City Search") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("View all cities and validate a few non-popular names","City Search")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Explore upcoming movies and validate &#039;In Cinemas Near You&#039; link&quot;, &quot;Movie Search&quot;)">
+                  </a> <!-- runScenario("Explore upcoming movies and validate 'In Cinemas Near You' link", "Movie Search") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Explore upcoming movies and validate 'In Cinemas Near You' link","Movie Search")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;View all cities and validate a few non-popular names&quot;, &quot;City Search&quot;)">
+                  </a> <!-- runScenario("View all cities and validate a few non-popular names", "City Search") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("View all cities and validate a few non-popular names","City Search")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate key UI elements on Movies screen&quot;, &quot;Movie Search&quot;)">
+                  </a> <!-- runScenario("Validate key UI elements on Movies screen", "Movie Search") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate key UI elements on Movies screen","Movie Search")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;View all cities and validate a few non-popular names&quot;, &quot;City Search&quot;)">
+                  </a> <!-- runScenario("View all cities and validate a few non-popular names", "City Search") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("View all cities and validate a few non-popular names","City Search")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate Check Gift Card Balance icon is visible&quot;, &quot;Gift Card&quot;)">
+                  </a> <!-- runScenario("Validate Check Gift Card Balance icon is visible", "Gift Card") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate Check Gift Card Balance icon is visible","Gift Card")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Elements should be visible&quot;, &quot;Login Module&quot;)">
+                  </a> <!-- runScenario("Elements should be visible", "Login Module") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Elements should be visible","Login Module")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate key UI elements on Movies screen&quot;, &quot;Movie Search&quot;)">
+                  </a> <!-- runScenario("Validate key UI elements on Movies screen", "Movie Search") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate key UI elements on Movies screen","Movie Search")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate key UI elements on Movies screen&quot;, &quot;Movie Search&quot;)">
+                  </a> <!-- runScenario("Validate key UI elements on Movies screen", "Movie Search") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate key UI elements on Movies screen","Movie Search")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate key UI elements on Movies screen&quot;, &quot;Movie Search&quot;)">
+                  </a> <!-- runScenario("Validate key UI elements on Movies screen", "Movie Search") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate key UI elements on Movies screen","Movie Search")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check gift card balance with invalid voucher&quot;, &quot;Gift Card&quot;)">
+                  </a> <!-- runScenario("Check gift card balance with invalid voucher", "Gift Card") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check gift card balance with invalid voucher","Gift Card")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate key UI elements on Movies screen&quot;, &quot;Movie Search&quot;)">
+                  </a> <!-- runScenario("Validate key UI elements on Movies screen", "Movie Search") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate key UI elements on Movies screen","Movie Search")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\himad\eclipse-workspace\Capstoneproject\capstone.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;runners.TestRunner&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">cucumber</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">runScenario</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(25);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'runScenario')
+data.setCell(0, 2, 'runners.TestRunner')
+data.setCell(0, 3, 11947);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'runScenario')
+data.setCell(1, 2, 'runners.TestRunner')
+data.setCell(1, 3, 10962);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'runScenario')
+data.setCell(2, 2, 'runners.TestRunner')
+data.setCell(2, 3, 10676);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'runScenario')
+data.setCell(3, 2, 'runners.TestRunner')
+data.setCell(3, 3, 10499);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'runScenario')
+data.setCell(4, 2, 'runners.TestRunner')
+data.setCell(4, 3, 8236);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'runScenario')
+data.setCell(5, 2, 'runners.TestRunner')
+data.setCell(5, 3, 6407);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'runScenario')
+data.setCell(6, 2, 'runners.TestRunner')
+data.setCell(6, 3, 4574);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'runScenario')
+data.setCell(7, 2, 'runners.TestRunner')
+data.setCell(7, 3, 4394);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'runScenario')
+data.setCell(8, 2, 'runners.TestRunner')
+data.setCell(8, 3, 4369);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'runScenario')
+data.setCell(9, 2, 'runners.TestRunner')
+data.setCell(9, 3, 4344);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'runScenario')
+data.setCell(10, 2, 'runners.TestRunner')
+data.setCell(10, 3, 4095);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'runScenario')
+data.setCell(11, 2, 'runners.TestRunner')
+data.setCell(11, 3, 4078);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'runScenario')
+data.setCell(12, 2, 'runners.TestRunner')
+data.setCell(12, 3, 4020);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'runScenario')
+data.setCell(13, 2, 'runners.TestRunner')
+data.setCell(13, 3, 3654);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'runScenario')
+data.setCell(14, 2, 'runners.TestRunner')
+data.setCell(14, 3, 3639);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'runScenario')
+data.setCell(15, 2, 'runners.TestRunner')
+data.setCell(15, 3, 3618);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'runScenario')
+data.setCell(16, 2, 'runners.TestRunner')
+data.setCell(16, 3, 3559);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'runScenario')
+data.setCell(17, 2, 'runners.TestRunner')
+data.setCell(17, 3, 3491);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'runScenario')
+data.setCell(18, 2, 'runners.TestRunner')
+data.setCell(18, 3, 3405);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'runScenario')
+data.setCell(19, 2, 'runners.TestRunner')
+data.setCell(19, 3, 3382);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'runScenario')
+data.setCell(20, 2, 'runners.TestRunner')
+data.setCell(20, 3, 3353);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'runScenario')
+data.setCell(21, 2, 'runners.TestRunner')
+data.setCell(21, 3, 3319);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'runScenario')
+data.setCell(22, 2, 'runners.TestRunner')
+data.setCell(22, 3, 3219);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'runScenario')
+data.setCell(23, 2, 'runners.TestRunner')
+data.setCell(23, 3, 3173);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'runScenario')
+data.setCell(24, 2, 'runners.TestRunner')
+data.setCell(24, 3, 3171);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">runners.TestRunner</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass(org.testng.TestRunner@2762253e)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Search with a valid city name", "City Search")</span>
+                <span class="method-start">501 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Search with an invalid/non-existing city", "City Search")</span>
+                <span class="method-start">5077 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Select city using popular city icons", "City Search")</span>
+                <span class="method-start">13315 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("View all cities and validate a few non-popular names", "City Search")</span>
+                <span class="method-start">16875 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("View all cities and validate a few non-popular names", "City Search")</span>
+                <span class="method-start">28824 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("View all cities and validate a few non-popular names", "City Search")</span>
+                <span class="method-start">39787 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("View all cities and validate a few non-popular names", "City Search")</span>
+                <span class="method-start">50287 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate Check Gift Card Balance icon is visible", "Gift Card")</span>
+                <span class="method-start">60964 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check gift card balance with invalid voucher", "Gift Card")</span>
+                <span class="method-start">65060 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Valid login with valid credentials", "Login Module")</span>
+                <span class="method-start">71468 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Invalid login with invalid credentials", "Login Module")</span>
+                <span class="method-start">75812 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Elements should be visible", "Login Module")</span>
+                <span class="method-start">79890 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Search for a currently running movie from and validate results", "Movie Search")</span>
+                <span class="method-start">83546 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Search for a currently running movie from and validate results", "Movie Search")</span>
+                <span class="method-start">87941 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate key UI elements on Movies screen", "Movie Search")</span>
+                <span class="method-start">91962 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate key UI elements on Movies screen", "Movie Search")</span>
+                <span class="method-start">95134 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate key UI elements on Movies screen", "Movie Search")</span>
+                <span class="method-start">98488 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate key UI elements on Movies screen", "Movie Search")</span>
+                <span class="method-start">101870 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate key UI elements on Movies screen", "Movie Search")</span>
+                <span class="method-start">105489 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate key UI elements on Movies screen", "Movie Search")</span>
+                <span class="method-start">108894 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate key UI elements on Movies screen", "Movie Search")</span>
+                <span class="method-start">112114 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate key UI elements on Movies screen", "Movie Search")</span>
+                <span class="method-start">115606 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate key UI elements on Movies screen", "Movie Search")</span>
+                <span class="method-start">118925 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate key UI elements on Movies screen", "Movie Search")</span>
+                <span class="method-start">122565 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Explore upcoming movies and validate 'In Cinemas Near You' link", "Movie Search")</span>
+                <span class="method-start">125740 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">130110 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
