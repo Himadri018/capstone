@@ -8,11 +8,6 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class ScreenshotUtil{
-
-    /**
-     * Returns PNG bytes for Cucumber `scenario.attach(...)`
-     * Also saves the screenshot under ./screenshots/<name>_<timestamp>.png
-     */
     public static byte[] captureScreenshot(WebDriver d, String name) {
         try {
             byte[] bytes = ((TakesScreenshot) d).getScreenshotAs(OutputType.BYTES);

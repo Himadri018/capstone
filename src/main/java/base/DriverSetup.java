@@ -36,7 +36,9 @@ public class DriverSetup {
         d.get(baseUrl);
     }
 
-    public static WebDriver getDriver() { return d; }
+    public static WebDriver getDriver() { 
+    	return d; 
+    	}
 
     public static void quitDriver() {
         if (d != null) {

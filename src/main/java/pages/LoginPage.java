@@ -75,16 +75,10 @@ public class LoginPage extends BasePage {
 
     public boolean isInvalidMobileErrorVisible() {
     	try {
+    		System.out.println(invalidMobileError.getText());
             return WaitUtils.waitForVisible(d, invalidMobileError, 8).isDisplayed();
         } catch (Exception ignore) {
-            try {
-                WebElement byText = d.findElement(org.openqa.selenium.By.xpath(
-                    "//*[contains(translate(normalize-space(.), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'invalid mobile')]"
-                ));
-                return WaitUtils.waitForVisible(d, byText, 5).isDisplayed();
-            } catch (Exception e2) {
                 return false;
-            }
         }
     }
 
